@@ -27,19 +27,19 @@ string [] symbol(string [] stringArray)
     if(stringArray[i].Length <=3)
     n++;
   }
-  string [] rez = new string [n];
+  string [] count = new string [n];
   int j = 0;
   for (int i = 0;i<stringArray.Length;i++)
   {
     if(stringArray[i].Length <=3)
     {
-        rez[j] = stringArray[i];
+        count[j] = stringArray[i];
         j++;
     }
   }
-  return rez;
+  return count;
 }
-void printA(string [] stringArray)
+void printArrayNew(string [] stringArray)
 {
     Console.Write("[");
     for (int i = 0;i<stringArray.Length;i++)
@@ -49,4 +49,4 @@ void printA(string [] stringArray)
     Console.Write("]");
 }
 array(stringArray);
-printA(symbol(stringArray));
+printArrayNew(symbol(stringArray));
