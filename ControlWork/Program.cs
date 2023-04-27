@@ -27,17 +27,17 @@ string [] symbol(string [] stringArray)
     if(stringArray[i].Length <=3)
     n++;
   }
-  string [] count = new string [n];
+  string [] result = new string [n];
   int j = 0;
   for (int i = 0;i<stringArray.Length;i++)
   {
     if(stringArray[i].Length <=3)
     {
-        count[j] = stringArray[i];
+        result[j] = stringArray[i];
         j++;
     }
   }
-  return count;
+  return result;
 }
 void printArrayNew(string [] stringArray)
 {
